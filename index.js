@@ -78,7 +78,7 @@ async function run() {
 
 
 
-    app.get('/card', async (req, res) => {
+    app.get('/Card', async (req, res) => {
       const result = await cardCollection.find().toArray();
       res.send(result);
     })
